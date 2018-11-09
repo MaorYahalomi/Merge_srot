@@ -86,4 +86,28 @@ class MergeSortAlgorithm
             return result;
         }
     }
+
+    public static void Print_arr(int[] arr)
+    {
+        int i;
+
+        for (i = 0; i < arr.Length; i++)
+        {
+            Console.Write(" " + arr[i]);
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        int i;
+        int[] test = { 4, 3, 2, 1, 5 };
+        Print_arr(test);
+        MergeSort(test, 0, 4);
+        Console.WriteLine();
+        Print_arr(test);
+
+
+        Console.ReadKey();
+    }
 }
+
